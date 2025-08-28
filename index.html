@@ -118,31 +118,64 @@
     </div>
   </section>
 
-  <!-- Optional extra video section (remove if redundant) -->
-  <section class="hero is-small">
-    <div class="hero-body">
-      <div class="container">
-        <h2 class="title is-3">Additional Clips</h2>
-        <div id="results-carousel-extra" class="carousel results-carousel">
-          <div class="item item-video1">
-            <video poster="" autoplay controls muted loop height="100%">
-              <source src="static/videos/demo_hardware_quadrupedal.mp4" type="video/mp4">
-            </video>
+<!-- Additional Clips: three videos side by side -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered">Additional Clips</h2>
+      <div class="columns is-multiline is-variable is-5">
+        <!-- Quadrupedal hardware -->
+        <div class="column is-12-mobile is-4-tablet is-4-desktop">
+          <div class="card" style="height: 100%;">
+            <div class="card-image">
+              <figure class="image">
+                <video style="width:100%; height:100%;" controls muted loop playsinline>
+                  <source src="static/videos/demo_hardware_quadrupedal.mp4" type="video/mp4">
+                </video>
+              </figure>
+            </div>
+            <div class="card-content" style="padding: 0.75rem 1rem;">
+              <p class="has-text-weight-semibold">Quadrupedal Hardware (Go2 Walking)</p>
+            </div>
           </div>
-          <div class="item item-video2">
-            <video poster="" autoplay controls muted loop height="100%">
-              <source src="static/videos/demo_hardware_bipedal.mp4" type="video/mp4">
-            </video>
+        </div>
+
+        <!-- Bipedal hardware -->
+        <div class="column is-12-mobile is-4-tablet is-4-desktop">
+          <div class="card" style="height: 100%;">
+            <div class="card-image">
+              <figure class="image">
+                <video style="width:100%; height:100%;" controls muted loop playsinline>
+                  <source src="static/videos/demo_hardware_bipedal.mp4" type="video/mp4">
+                </video>
+              </figure>
+            </div>
+            <div class="card-content" style="padding: 0.75rem 1rem;">
+              <p class="has-text-weight-semibold">Bipedal Hardware (Go2 Front-Legs Balancing)</p>
+            </div>
           </div>
-          <div class="item item-video3">
-            <video poster="" autoplay controls muted loop height="100%">
-             <source src="static/videos/demo_simulation.mp4" type="video/mp4">
-            </video>
+        </div>
+
+        <!-- Simulation demos -->
+        <div class="column is-12-mobile is-4-tablet is-4-desktop">
+          <div class="card" style="height: 100%;">
+            <div class="card-image">
+              <figure class="image">
+                <video style="width:100%; height:100%;" controls muted loop playsinline>
+                  <source src="static/videos/demo_simulation.mp4" type="video/mp4">
+                </video>
+              </figure>
+            </div>
+            <div class="card-content" style="padding: 0.75rem 1rem;">
+              <p class="has-text-weight-semibold">Simulation Demos</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- BibTeX -->
   <section class="section" id="BibTeX">
